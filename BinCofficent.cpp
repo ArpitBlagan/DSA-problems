@@ -7,6 +7,7 @@ using namespace std;
 #define ll long long
 const ll INF=1e18;
 const int mod=1e9+7;
+//Dynamic Programing approch efficent one.
 //nCr is nothing but number of ways to choose r numbers from total n numbers.
 //nC0||nC1==1.
 ll dp[51][51];
