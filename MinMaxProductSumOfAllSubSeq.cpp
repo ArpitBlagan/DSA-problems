@@ -15,7 +15,7 @@ int main(){
 		cin>>arr[i];
 	}ll ans=0,mx=0;sort(arr.rbegin(),arr.rend());for(int i=0;i<n;i++){
 		ans+=mx*arr[i]+arr[i]*arr[i];ans%=mod;
-		mx=2*mx+arr[i];mx/=2;mx%=2;
+		mx=2*mx+arr[i];mx/=2;mx%=mod;
 	}cout<<ans;
 	return 0;
 }
