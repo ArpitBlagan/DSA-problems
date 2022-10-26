@@ -17,7 +17,7 @@ int main(){
 		}bool ok=true;
 		for(int i=1;i<x;i++){
 			if(cnt[i]%(i+1)){ok=false;}
-			cnt[i+1]=cnt[i]/(i+1);
+			cnt[i+1]+=cnt[i]/(i+1);
 		}if(ok){cout<<"YES\n";}else{cout<<"NO\n";}
 	return 0;
 }
